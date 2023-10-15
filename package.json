@@ -1,7 +1,26 @@
 {
-  "bin": "main.go",
-  "name": "letsChat",
+  "bin": {
+    "letsChat": "main.go"
+  },
+  "name": "client",
   "author": "nickthorp1",
   "version": "1.0.0",
-  "license": "UNLICENCED"
+  "license": "UNLICENCED",
+  "dependencies": {
+    "next": "12"
+  },
+  "description": "Real time chat app",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickthorp1/letsChat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nickthorp1/letsChat/issues"
+  },
+  "homepage": "https://github.com/nickthorp1/letsChat#readme"
 }
