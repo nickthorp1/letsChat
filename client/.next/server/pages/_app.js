@@ -5,129 +5,91 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 932:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ 141:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-var __webpack_unused_export__;
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
-__webpack_unused_export__ = ({
-    value: true
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ _app)
 });
-exports.Z = _asyncToGenerator;
-function _asyncToGenerator(fn) {
-    return function() {
-        var self = this, args = arguments;
-        return new Promise(function(resolve, reject) {
-            var gen = fn.apply(self, args);
-            function _next(value) {
-                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
-            }
-            function _throw(err) {
-                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
-            }
-            _next(undefined);
-        });
-    };
-}
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
-    try {
-        var info = gen[key](arg);
-        var value = info.value;
-    } catch (error) {
-        reject(error);
-        return;
-    }
-    if (info.done) {
-        resolve(value);
-    } else {
-        Promise.resolve(value).then(_next, _throw);
-    }
-}
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(689);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+;// CONCATENATED MODULE: external "next/head"
+const head_namespaceObject = require("next/head");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
+;// CONCATENATED MODULE: ./src/components/navBar/NavBar.tsx
 
 
-/***/ }),
-
-/***/ 648:
-/***/ ((__unused_webpack_module, exports) => {
-
-var __webpack_unused_export__;
-
-__webpack_unused_export__ = ({
-    value: true
-});
-exports.Z = _interopRequireDefault;
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-        default: obj
-    };
-}
-
-
-/***/ }),
-
-/***/ 29:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-
-Object.defineProperty(exports, "__esModule", ({
-    value: true
-}));
-Object.defineProperty(exports, "AppInitialProps", ({
-    enumerable: true,
-    get: function() {
-        return _utils.AppInitialProps;
-    }
-}));
-Object.defineProperty(exports, "NextWebVitalsMetric", ({
-    enumerable: true,
-    get: function() {
-        return _utils.NextWebVitalsMetric;
-    }
-}));
-Object.defineProperty(exports, "AppType", ({
-    enumerable: true,
-    get: function() {
-        return _utils.AppType;
-    }
-}));
-exports["default"] = void 0;
-var _async_to_generator = (__webpack_require__(932)/* ["default"] */ .Z);
-var _interop_require_default = (__webpack_require__(648)/* ["default"] */ .Z);
-var _react = _interop_require_default(__webpack_require__(689));
-var _utils = __webpack_require__(232);
-function appGetInitialProps(_) {
-    return _appGetInitialProps.apply(this, arguments);
-}
-function _appGetInitialProps() {
-    _appGetInitialProps = /**
- * `App` component is used for initialize of pages. It allows for overwriting and full control of the `page` initialization.
- * This allows for keeping state between navigation, custom error handling, injecting additional data.
- */ _async_to_generator(function*({ Component , ctx  }) {
-        const pageProps = yield (0, _utils).loadGetInitialProps(Component, ctx);
-        return {
-            pageProps
-        };
+const NavBar = ()=>{
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        children: /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+            children: "NavBar"
+        })
     });
-    return _appGetInitialProps.apply(this, arguments);
+};
+/* harmony default export */ const navBar_NavBar = (NavBar);
+
+;// CONCATENATED MODULE: ./src/components/layout/Layout.tsx
+
+
+
+const Layout = ({ children  })=>{
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx(navBar_NavBar, {}),
+            children,
+            /*#__PURE__*/ jsx_runtime_.jsx("h1", {
+                children: "footer"
+            })
+        ]
+    });
+};
+/* harmony default export */ const layout_Layout = (Layout);
+
+;// CONCATENATED MODULE: ./src/pages/_app.tsx
+
+
+// import PropTypes from 'prop-types';
+
+// import './app.moudule.scss';
+
+// Define the main App component
+function MyApp({ Component , pageProps  }) {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)((external_react_default()).Fragment, {
+        children: [
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx("title", {
+                        children: "My Next.js App"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                        name: "viewport",
+                        content: "minimum-scale=1, initial-scale=1, width=device-width"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(layout_Layout, {
+                children: /*#__PURE__*/ jsx_runtime_.jsx(Component, {
+                    ...pageProps
+                })
+            })
+        ]
+    });
 }
-var _Component;
-class App extends (_Component = _react.default.Component) {
-    render() {
-        const { Component , pageProps  } = this.props;
-        return /*#__PURE__*/ _react.default.createElement(Component, Object.assign({}, pageProps));
-    }
-}
-App.origGetInitialProps = appGetInitialProps;
-App.getInitialProps = appGetInitialProps;
-exports["default"] = App; //# sourceMappingURL=_app.js.map
+// // Define the prop types for the MyApp component
+// MyApp.propTypes = {
+//   Component: PropTypes.elementType.isRequired,
+//   pageProps: PropTypes.object.isRequired,
+// };
+/* harmony default export */ const _app = (MyApp);
 
-
-/***/ }),
-
-/***/ 232:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
@@ -135,6 +97,13 @@ module.exports = require("next/dist/shared/lib/utils.js");
 /***/ ((module) => {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ 997:
+/***/ ((module) => {
+
+module.exports = require("react/jsx-runtime");
 
 /***/ })
 
@@ -145,7 +114,7 @@ module.exports = require("react");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(29));
+var __webpack_exports__ = (__webpack_exec__(141));
 module.exports = __webpack_exports__;
 
 })();
