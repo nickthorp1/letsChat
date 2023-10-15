@@ -1,13 +1,24 @@
-"use strict";
 (() => {
 var exports = {};
 exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
+/***/ 38:
+/***/ ((module) => {
+
+// Exports
+module.exports = {
+
+};
+
+
+/***/ }),
+
 /***/ 141:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
@@ -36,7 +47,11 @@ const NavBar = ()=>{
 };
 /* harmony default export */ const navBar_NavBar = (NavBar);
 
+// EXTERNAL MODULE: ./src/components/layout/layout.module.scss
+var layout_module = __webpack_require__(38);
+var layout_module_default = /*#__PURE__*/__webpack_require__.n(layout_module);
 ;// CONCATENATED MODULE: ./src/components/layout/Layout.tsx
+
 
 
 
@@ -44,7 +59,10 @@ const Layout = ({ children  })=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(navBar_NavBar, {}),
-            children,
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: (layout_module_default()).background,
+                children: children
+            }),
             /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                 children: "footer"
             })
@@ -58,7 +76,7 @@ const Layout = ({ children  })=>{
 
 // import PropTypes from 'prop-types';
 
-// import './app.moudule.scss';
+
 
 // Define the main App component
 function MyApp({ Component , pageProps  }) {
@@ -96,6 +114,7 @@ function MyApp({ Component , pageProps  }) {
 /***/ 689:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react");
 
 /***/ }),
@@ -103,6 +122,7 @@ module.exports = require("react");
 /***/ 997:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react/jsx-runtime");
 
 /***/ })

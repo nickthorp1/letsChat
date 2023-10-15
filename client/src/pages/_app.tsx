@@ -1,7 +1,7 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import Head from 'next/head';
- import './app.module.scss';
+ import './app.css';
 import Layout from '../components/layout/Layout';
 
 // Define the main App component
