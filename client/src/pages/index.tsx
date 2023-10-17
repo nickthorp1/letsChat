@@ -23,6 +23,7 @@ function index() {
   console.log(data)
   return (
     <div>
+      <h1>hel</h1>
       {error ? (
         <div>Error: {error}</div>
       ) : data ? (
