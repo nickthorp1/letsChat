@@ -1,10 +1,10 @@
 import React from 'react'
 import Box from '../components/box/Box'
-import EmailInput from '../components/emailInput/emailInput'
-import LoginHeader from '../components/loginHeader/LoginHeader'
-import Header from '../components/header/Header'
-import PasswordInput from '../components/passwordInput/PasswordInput'
-import AuthForm from '../components/authForm/AuthForm'
+import EmailInput from '../modules/auth/emailInput/emailInput'
+import LoginHeader from '../modules/auth/loginHeader/LoginHeader'
+import Header from '../modules/commonUI/header/Header'
+import PasswordInput from '../modules/auth/passwordInput/PasswordInput'
+import AuthForm from '../modules/auth/authForm/AuthForm'
 
 function home() {
   return (

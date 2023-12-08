@@ -2,7 +2,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import Head from 'next/head';
  import './app.css';
-import Layout from '../components/layout/Layout';
+import Layout from '../modules/commonUI/layout/Layout';
 
 // Define the main App component
 function MyApp({ Component, pageProps }) {
